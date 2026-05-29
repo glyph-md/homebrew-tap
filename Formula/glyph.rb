@@ -2,16 +2,16 @@ class Glyph < Formula
   desc "Cross-platform markdown viewer"
   homepage "https://github.com/hamidfzm/glyph"
   license "MIT"
-  version "0.8.0"
+  version "0.8.1"
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/hamidfzm/glyph/releases/download/v0.8.0/Glyph_0.8.0_amd64.deb"
-      sha256 "fc214f4ebffda97e8cf7bde7e6cf03e33be6171e6ce51867f607a4ac0718c89d"
+      url "https://github.com/hamidfzm/glyph/releases/download/v0.8.1/Glyph_0.8.1_amd64.deb"
+      sha256 "b9f53d160fa179292a229ded6d7fc8c0a6fd7389a9d3254b64d244d201053bbc"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hamidfzm/glyph/releases/download/v0.8.0/Glyph_0.8.0_arm64.deb"
-      sha256 "1f946273d56443315605cbadc211b7132f0c71128798a47e23fe2af8fd5d1df1"
+      url "https://github.com/hamidfzm/glyph/releases/download/v0.8.1/Glyph_0.8.1_arm64.deb"
+      sha256 "b8a3fba7af8ef46d200719be6c03f5fb0ef2baeab1305c1659d8ef5c25b1d9e0"
     end
   end
 
