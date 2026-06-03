@@ -1,6 +1,6 @@
 cask "glyph" do
-  version "0.8.1"
-  sha256 "0c52d571c5562f316611e639ef9b8a3f8a7a0cd5baaaceb703a1eb38caee0672"
+  version "0.9.0"
+  sha256 "04653bb1ca21ce3548f4e9d0d108d8006fdd97e90a54b45df17cb0b3edb505ea"
 
   url "https://github.com/hamidfzm/glyph/releases/download/v#{version}/Glyph_#{version}_universal.dmg"
   name "Glyph"
