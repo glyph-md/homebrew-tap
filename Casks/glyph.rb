@@ -5,20 +5,20 @@ cask "glyph" do
   url "https://github.com/hamidfzm/glyph/releases/download/v#{version}/Glyph_#{version}_universal.dmg"
   name "Glyph"
   desc "Cross-platform markdown viewer"
-  homepage "https://glyph-md.github.io"
+  homepage "https://glyph-md.github.io/"
 
   livecheck do
     url :url
     strategy :github_latest
   end
 
+  depends_on :macos
+
   app "Glyph.app"
   binary "#{appdir}/Glyph.app/Contents/MacOS/Glyph", target: "glyph"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Glyph.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/Glyph.app"]
   end
 
   zap trash: [
