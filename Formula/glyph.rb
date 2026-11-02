@@ -2,17 +2,17 @@ class Glyph < Formula
   desc "Cross-platform markdown viewer"
   homepage "https://glyph-md.github.io"
   license "MIT"
-  version "0.27.0"
+  version "0.27.1"
 
   # url/sha256 must be defined at the top level so the formula parses on every
   # platform (otherwise macOS taps fail with "formula requires at least a URL").
   # `depends_on :linux` is what keeps this Linux-only at install time.
   if Hardware::CPU.arm?
-    url "https://github.com/hamidfzm/glyph/releases/download/v0.27.0/Glyph_0.27.0_arm64.deb"
-    sha256 "6a9060d28cc0db54783975ed0d25c434bb903724b1232d2eec9b2f8290d67dd8"
+    url "https://github.com/hamidfzm/glyph/releases/download/v0.27.1/Glyph_0.27.1_arm64.deb"
+    sha256 "5725694f8f051d202cc3fb5221d32d9284735a6b4f60f18e4e28910fd142201d"
   else
-    url "https://github.com/hamidfzm/glyph/releases/download/v0.27.0/Glyph_0.27.0_amd64.deb"
-    sha256 "96aec9593e8ec482df8f1623a8c7f42bd4f7fe25b2ceb84ed3f13d3c26a28f4e"
+    url "https://github.com/hamidfzm/glyph/releases/download/v0.27.1/Glyph_0.27.1_amd64.deb"
+    sha256 "b6e86413417132f7a70d752d4b8cd907fd57d7db5c5ba2b3457c0c8d257ba53c"
   end
 
   depends_on :linux
